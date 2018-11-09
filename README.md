@@ -83,10 +83,9 @@ jdbc.password=12345678
 ```
 
 4、idea中添加maven执行命令
-![IMAGE](quiver-image-url/1654B59112862A2D4A059C7FD54F9A18.jpg =1105x631)
+   Edit Configurations -> maven，配置命令：mybatis-generator:generate -e
 
 5、执行maven命令
-![IMAGE](quiver-image-url/5865CEED7F8E14475B7074E4629696FD.jpg =447x270)
 
 
 > 注意：配置文件中的各种路径，需要自己配置，如果需要满足一些个性化生成，自行百度对应配置generatorConfig.xml的内容；
