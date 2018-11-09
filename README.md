@@ -82,7 +82,7 @@ jdbc.userId=root
 jdbc.password=12345678
 ```
 
-4、idea中添加maven执行命令
+4、idea中添加maven执行命令 <br>
    Edit Configurations -> maven，配置命令：mybatis-generator:generate -e
 
 5、执行maven命令
