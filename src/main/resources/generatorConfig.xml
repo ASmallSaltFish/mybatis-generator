@@ -38,14 +38,21 @@
         <!-- 实体包对应映射文件位置及名称，默认存放在src目录下 -->
         <sqlMapGenerator targetPackage="com.my.mapper" targetProject="src/main/java" />
 
+
+        <!-- 对应的Mapper接口类文件 -->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.my.mapper" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
         <!-- 配置表
             schema：不用填写
             tableName: 表名
             enableCountByExample、enableSelectByExample、enableDeleteByExample、enableUpdateByExample、selectByExampleQueryId：
             去除自动生成的例子
         -->
-        <table schema="" tableName="t_bw_user" domainObjectName="User" enableCountByExample="false" enableSelectByExample="true"
-               enableDeleteByExample="false" enableUpdateByExample="true" selectByExampleQueryId="true" >
+        <table schema="" tableName="T_USER" domainObjectName="Role" enableInsert="false" enableCountByExample="false"
+               enableSelectByExample="false" enableDeleteByExample="false" enableUpdateByExample="false"
+               selectByExampleQueryId="false">
         </table>
     </context>
 </generatorConfiguration>
