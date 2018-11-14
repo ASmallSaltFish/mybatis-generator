@@ -1,4 +1,4 @@
-package generator;
+package com.my;
 
 import com.baomidou.mybatisplus.generator.AutoGenerator;
 import com.baomidou.mybatisplus.generator.config.DataSourceConfig;

@@ -1,6 +1,7 @@
 ### mybatis逆向工程，快速生成mapper.xml和pojo
 * 使用环境：idea + maven
 
+#### mybatis使用xml方式配置的逆向工程
 1、新建maven项目，pom.xml中添加插件
 ```$xslt
 <!-- mybatis逆向工程 -->
@@ -90,3 +91,8 @@ jdbc.password=12345678
 
 
 > 注意：配置文件中的各种路径，需要自己配置，如果需要满足一些个性化生成，自行百度对应配置generatorConfig.xml的内容；
+
+
+#### 使用mybatis-plus代码生成工具
+* com.my.GeneratorServiceEntity
+> 修改该类数据库连接信息，生成的包路径，添加需要逆向生成的表信息即可，具体看代码配置，然后执行main方法即可；
